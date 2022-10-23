@@ -1,0 +1,245 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+
+header{
+    background-image: url(./mannequin.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+ul{
+    list-style: none;
+}
+
+.navbar{
+    background-color: rgb(209, 233, 254);
+}
+
+.navbar a{
+    color: rgb(4, 7, 21);
+    display: flex;
+    align-items: center;
+}
+
+.boutonNavigation{
+    display: flex;
+    justify-content: end;
+    justify-content: space-around;
+}
+
+ul li a{
+    text-decoration: none;
+    padding: 10px;
+    text-transform: uppercase;
+    border: 1px solid rgb(4, 7, 21);
+    margin: 10px;
+    font-weight: 500;
+    transition: 0.6s ease;
+}
+
+ul li a:hover{
+    background: rgb(4, 7, 21);
+    color: rgb(209, 233, 254);
+
+}
+
+.navbar{
+    max-width: 114rem;
+    margin: 0 auto;
+}
+
+.titre{
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+    color: aliceblue;
+}
+
+.article{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: center;
+}
+
+.sense img{
+
+    height: 90%;
+    width:  90%;
+}
+
+.article .paragraphe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bouton{
+    display: flex;
+    justify-content: end;
+    
+}
+
+.detail{
+    height: 100vh;
+    width: 100vh;
+    display: flex;
+    justify-content: start;
+}
+
+.detail img{
+    margin: 7px;
+    height: 450px;
+    width: 300px;
+}
+
+.caracteristique{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.titreCommentaire{
+    display: flex;
+    justify-content: center;
+}
+
+.commentaire{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.aBox {
+    display: inline-block;
+    width: 240px;
+    text-align: center;
+  }
+  
+  .imgContainer {
+      height: 230px;
+      width: 200px;
+      overflow: hidden;
+      border-radius: 0px 0px 20px 20px;
+      display: inline-block;
+  }
+  
+  .imgContainer img {
+      transform: skew(0deg, -13deg);
+      height: 250px;
+      margin: -35px 0px 0px -70px;
+  }
+  
+  .innerSkew {
+      display: inline-block;
+      border-radius: 20px;
+      overflow: hidden;
+      padding: 0px;
+      transform: skew(0deg, 13deg);
+      font-size: 0px;
+      margin: 30px 0px 0px 0px;
+      background: #c8c2c2;
+      height: 100%;
+      width: 100%;
+  }
+  
+  .textContainer {
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    padding: 120px 20px 20px 20px;
+    border-radius: 20px;
+    background: #fff;
+    margin: -120px 0px 0px 0px;
+    line-height: 19px;
+    font-size: 14px;
+  }
+  
+  .textContainer h3 {
+    margin: 20px 0px 10px 0px;
+    color: rgb(4, 7, 21);
+    font-size: 18px;
+  }
+
+.link{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.suivezNous{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.link img{
+    display: flex;
+    align-items: center;
+    height: 75px;
+    width: 75px;
+}
+
+.navbarBas{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 50%;
+}
+
+@media  screen and (max-device-width:480px){
+    
+    .boutonNavigation{
+        display: flex;
+        font-size: 50%;
+        justify-content: end;
+    }
+    .navbarBas{
+        display: flex;
+        justify-content: end;
+        padding: 5%;
+    
+    }
+
+    header{
+        background-image: url(./mannequin.jpg);
+        height: 600px;
+        background-size: auto;
+        background-position: 400px;
+    }
+    .sense{
+        width: 500%;
+        height: 500%;
+    }
+   
+    .detail {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 0%;
+
+    }
+    .detail img{
+        margin: 7px;
+        height: 60%;
+        width: 30%;
+    }
+
+    .caracteristique{
+        font-size: 50%;
+    }
+
+    .commentaire{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+   
+}
